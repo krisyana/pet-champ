@@ -1,11 +1,19 @@
-/* .container {
+.pets-list {
+    grid-column: center-start / center-end;
+    margin: 15rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 3rem;
+}
+
+.container-main {
     min-height: 100vh;
     padding: 0 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-} */
+}
 
 .main {
     padding: 5rem 0;
@@ -94,8 +102,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-    color: #0070f3;
-    border-color: #0070f3;
+    color: $color-primary;
+    border-color: $color-primary-dark;
 }
 
 .card h3 {
